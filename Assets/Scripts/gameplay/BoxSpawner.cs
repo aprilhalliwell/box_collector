@@ -43,8 +43,7 @@ namespace gameplay
                 }
                 else
                 {
-                    shouldSpawn = false;
-                    Debug.Log("All Boxes have been spawned");
+                    // Debug.Log("All Boxes have been spawned, waiting for released objects");
                 }
             }
         }

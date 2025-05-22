@@ -58,7 +58,7 @@ namespace gameplay.ai
             {
                 return;
             }
-            Debug.Log($"Transitioning to {nextState}");
+            // Debug.Log($"Transitioning to {nextState}");
             inTransition = true;
             
             currentState?.Exit();

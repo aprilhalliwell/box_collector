@@ -20,10 +20,7 @@ namespace gameplay.ai.states
         {
             //find our nearest box.
             targetedBox = agent.GetNearestBox();
-            if(targetedBox != null)
-            {
-                Debug.Log("Seeking box " + targetedBox.name);
-            }        }
+        }  
 
         /// <summary>
         /// We want to move towards a box until our collector picks up the box

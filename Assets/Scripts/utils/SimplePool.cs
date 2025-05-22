@@ -25,7 +25,7 @@ public class SimplePool : MonoBehaviour
         GameObject tmp;
         for(int i = 0; i < poolSize; i++)
         {
-            tmp = Instantiate(prefab);
+            tmp = Instantiate(prefab, transform);
             tmp.SetActive(false);
             pool.Add(tmp);
         }
@@ -46,7 +46,7 @@ public class SimplePool : MonoBehaviour
         //if we hit our max size return null
         if (poolSize >= maxPoolSize)
         {
-            Debug.LogWarning("Max pool size reached");
+            // Debug.LogWarning("Max pool size reached");
             return null;
         }
         //otherwise we can expand the pool more
@@ -65,6 +65,7 @@ public class SimplePool : MonoBehaviour
     {
         if (pool.Contains(obj))
         {
+            obj.transform.SetParent(transform);
             obj.SetActive(false);
         }
         else

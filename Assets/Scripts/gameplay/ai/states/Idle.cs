@@ -17,7 +17,7 @@ namespace gameplay.ai.states
 
         public override void Enter()
         {
-            Debug.Log("Going to Idle");
+            // Debug.Log("Going to Idle");
         }
 
         public override void Update()

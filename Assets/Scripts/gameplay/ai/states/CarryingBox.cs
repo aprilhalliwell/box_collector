@@ -19,7 +19,7 @@ namespace gameplay.ai.states
         {
             //first find our drop zone
             targetDropZone = agent.GetDropZoneForBox();
-            Debug.Log($"Carrying box to : {targetDropZone.BoxType}-{targetDropZone.name} for {agent.carriedBox.BoxType}");
+            // Debug.Log($"Carrying box to : {targetDropZone.BoxType}-{targetDropZone.name} for {agent.carriedBox.BoxType}");
         }
         public override void Update()
         {

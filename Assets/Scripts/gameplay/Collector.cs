@@ -85,7 +85,7 @@ namespace gameplay
         /// <param name="dropZone"></param>
         public void DropBox(DropZone dropZone)
         {
-            Debug.Log("Dropping Box at: " + dropZone.name);
+            // Debug.Log("Dropping Box at: " + dropZone.name);
             dropZone.DropBox(carriedBox);
             carriedBox = null;
         }
@@ -115,7 +115,7 @@ namespace gameplay
         /// </summary>
         public void StartCollecting()
         {
-            Debug.Log("StartCollecting");
+            // Debug.Log("StartCollecting");
             collectorFSM.ChangeState<Idle>();
         }
 

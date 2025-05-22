@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeldPosition: {fileID: 984269829}
-  moveSpeed: 15
+  moveSpeed: 8
   carriedBox: {fileID: 0}
 --- !u!50 &47045263
 Rigidbody2D:
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pool: []
   poolSize: 15
-  maxPoolSize: 30
+  maxPoolSize: 50
   prefab: {fileID: 4667157646061017520, guid: fcaf0a24c78ec4bd9955410ae9928c6c, type: 3}
 --- !u!114 &854517222
 MonoBehaviour:
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Boxes: []
   shouldSpawn: 1
-  spawnTime: {x: 1, y: 1}
+  spawnTime: {x: 1, y: 3}
 --- !u!1 &913765341
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7d94fe111841ad8c65bc5be6acb53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  despawnRange: {x: 1, y: 5}
   boxType: 1
+  maxStackSize: 7
   horizontalOffset: 0.26
 --- !u!61 &943679188
 BoxCollider2D:
@@ -824,7 +826,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.15, y: 0}
+  m_Offset: {x: 0.22, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -834,7 +836,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 1
   m_AutoTiling: 0
-  m_Size: {x: 1.24, y: 1}
+  m_Size: {x: 1.51, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &984269828
 GameObject:
@@ -1751,7 +1753,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7d94fe111841ad8c65bc5be6acb53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  despawnRange: {x: 1, y: 5}
   boxType: 0
+  maxStackSize: 7
   horizontalOffset: -0.26
 --- !u!61 &1783649317
 BoxCollider2D:
@@ -1787,7 +1791,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.15, y: 0}
+  m_Offset: {x: -0.1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
